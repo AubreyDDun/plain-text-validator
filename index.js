@@ -1,0 +1,1 @@
+module.exports = require('./dist/plain-text-validator.js');

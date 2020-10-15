@@ -1,0 +1,53 @@
+{
+  "name": "plain-text-validator",
+  "version": "0.0.1",
+  "description": "Used to verify whether the giving text is plain text",
+  "main": "index.js",
+  "scripts": {
+    "clear": "rm -rf dist/",
+    "output": "cd core && tsc --outDir ../dist",
+    "build": "npm run clear && npm run output",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "emoji-aware": "^3.0.5"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "eslint": "^6.7.2",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "vue",
+      "@typescript-eslint"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint",
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "rules": {
+      "class-methods-use-this": "off",
+      "consistent-return": "off",
+      "linebreak-style": "off"
+    },
+    "ignorePatterns": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AubreyDDun/plain-text-validator.git"
+  },
+  "keywords": [
+    "plain-text-validator",
+    "emoji-free"
+  ],
+  "author": "AubreyDDun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AubreyDDun/plain-text-validator/issues"
+  },
+  "homepage": "https://github.com/AubreyDDun/plain-text-validator#readme"
+}
